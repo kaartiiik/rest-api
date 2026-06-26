@@ -59,8 +59,7 @@ app.delete("/products/:id",(req,res)=>{
 }) 
  
 app.listen(8080 , ()=>{ 
-    console.log("port is running on 8080"); 
-});  
+    console.log("port is running on 8080");  
     const id = Number(req.params.id);
     const product = products.find((p)=>p.id === id);
     if(!product){
